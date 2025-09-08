@@ -1,8 +1,13 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
+/* Reset */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #f4f4f9;
   color: #333;
   line-height: 1.6;
@@ -13,31 +18,34 @@ header {
   background: linear-gradient(135deg, #4a148c, #311b92);
   color: white;
   text-align: center;
-  padding: 50px 20px;
+  padding: 70px 20px;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 header p {
-  margin-top: 10px;
   font-size: 1.2rem;
+  opacity: 0.9;
 }
 
 /* Navigation */
 nav {
   background: #311b92;
-  padding: 12px;
   text-align: center;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav a {
   color: white;
-  margin: 0 15px;
+  margin: 0 20px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   transition: color 0.3s;
 }
 
@@ -45,24 +53,55 @@ nav a:hover {
   color: #ffeb3b;
 }
 
-/* Sections */
+/* Main Content */
 main {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
-  padding: 30px 20px;
+  padding: 40px 20px;
 }
 
+/* Card Style */
 .card {
   background: white;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 25px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 .card h2 {
-  margin-top: 0;
+  margin-bottom: 15px;
   color: #311b92;
+  border-left: 5px solid #4a148c;
+  padding-left: 10px;
+}
+
+/* List Items */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 8px 0;
+  font-size: 1.05rem;
+}
+
+/* Contact Links */
+a {
+  color: #4a148c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* Footer */
@@ -70,7 +109,9 @@ footer {
   background: #4a148c;
   color: white;
   text-align: center;
-  padding: 20px;
-  margin-top: 30px;
+  padding: 25px;
+  margin-top: 40px;
+  font-size: 0.95rem;
 }
+
 

@@ -18,14 +18,17 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 10%;
-  background: #111;
+  background: linear-gradient(90deg, #000 0%, #111 60%, #ff9800 100%);
+  box-shadow: 0 0 15px rgba(255, 152, 0, 0.6);  /* 🔥 glowing effect */
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 2px solid #ff9800;
 }
 
 .logo img {
-  height: 50px;
+  height: 55px;
+  filter: drop-shadow(0 0 8px rgba(255,152,0,0.7));
 }
 
 nav a {
@@ -38,6 +41,7 @@ nav a {
 
 nav a:hover {
   color: #ff9800;
+  text-shadow: 0 0 10px rgba(255,152,0,0.9);
 }
 
 /* Hero */
@@ -61,11 +65,13 @@ nav a:hover {
 
 .hero-text .highlight {
   color: #ff9800;
+  text-shadow: 0 0 10px rgba(255,152,0,0.9);
 }
 
 .hero-text h2 {
   font-size: 1.8rem;
   color: #00e676;
+  text-shadow: 0 0 10px rgba(0,230,118,0.8);
 }
 
 .hero-image {
@@ -108,7 +114,7 @@ nav a:hover {
 footer {
   text-align: center;
   padding: 20px;
-  background: #111;
+  background: #000;
   margin-top: 30px;
 }
 
@@ -131,3 +137,4 @@ footer {
 .whatsapp-btn:hover {
   background: #1ebd5a;
 }
+

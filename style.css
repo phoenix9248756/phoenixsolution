@@ -144,20 +144,31 @@ footer a {
 }
 
 .slogan-card {
-  background: linear-gradient(135deg, #ff9800, #ff5722);
+  background: linear-gradient(135deg, #ff9800, #ff5722); /* Orange gradient */
   padding: 20px;
   border-radius: 12px;
   color: #fff;
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-  border: none;
-  transition: all 0.3s ease;
+
+  /* 🔥 Golden Border */
+  border: 2px solid #FFD700;
+
+  /* Shadow for depth */
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: all 0.4s ease;
 }
 
 .slogan-card:hover {
-  transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 8px 20px rgba(255,87,34,0.6);
+  transform: translateY(-6px) scale(1.05);
+
+  /* 🔥 Golden glow effect */
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 
+              0 0 40px rgba(255, 152, 0, 0.5);
+
+  /* Lighter gradient on hover */
   background: linear-gradient(135deg, #ffb74d, #ff7043);
+  border-color: #FFA500; /* slightly orange-golden */
 }
+

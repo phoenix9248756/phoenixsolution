@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phoenix Solution - Hafiz Faizan</title>
+  <title>Phoenix Solution | Hafiz Faizan</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <h1>Hafiz Faizan</h1>
-    <p id="typing"></p>
+    <div class="logo">
+      <img src="images/logo.png" alt="Phoenix Solution Logo">
+    </div>
     <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -19,13 +20,22 @@
     </nav>
   </header>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm <span class="highlight">Hafiz Faizan</span></h1>
+      <h2><span id="typing"></span></h2>
+    </div>
+    <div class="hero-image">
+      <img src="images/profile.png" alt="Hafiz Faizan">
+    </div>
+  </section>
+
+  <!-- About -->
   <main>
-    <!-- About -->
     <section id="about" class="card">
       <h2>About Me</h2>
-      <p>Assalam o Alaikum! Mera naam <strong>Hafiz Faizan</strong> hai. 
-      Main ek web developer aur solar installer hoon, aur mujhe professional 
-      websites aur smart solar solutions banane ka tajurba hai.</p>
+      <p>Assalam o Alaikum! Mera naam <strong>Hafiz Faizan</strong> hai. Main ek web developer aur solar installer hoon. Mujhe professional websites aur smart solar solutions banane ka tajurba hai.</p>
     </section>
 
     <!-- Skills -->
@@ -42,12 +52,12 @@
     <!-- Projects -->
     <section id="projects" class="card">
       <h2>Projects</h2>
-      <div class="projects">
-        <div class="project-card">🌐 Shahid Plastic Industry Website</div>
-        <div class="project-card">⚡ Solar Calculator Web App</div>
-        <div class="project-card">📚 School Management System</div>
-        <div class="project-card">💼 Phoenix Solution Portfolio</div>
-      </div>
+      <ul>
+        <li>🌐 Shahid Plastic Industry Website</li>
+        <li>⚡ Solar Calculator Web App</li>
+        <li>📚 School Management System</li>
+        <li>💼 Phoenix Solution Portfolio</li>
+      </ul>
     </section>
 
     <!-- Contact -->
@@ -59,11 +69,17 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Hafiz Faizan | Phoenix Solution | Made with ❤️</p>
   </footer>
 
   <!-- WhatsApp Button -->
-  <a href="https://wa.me/923435647387" target="_blank" class="whatsapp-btn">💬 Chat on WhatsApp</a>
+  <a href="https://wa.me/923435647387" class="whatsapp-btn" target="_blank">
+    💬 Chat on WhatsApp
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
+

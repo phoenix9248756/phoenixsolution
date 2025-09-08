@@ -19,7 +19,7 @@ header {
   align-items: center;
   padding: 15px 10%;
   background: linear-gradient(90deg, #000 0%, #111 60%, #ff9800 100%);
-  box-shadow: 0 0 15px rgba(255, 152, 0, 0.6);  /* 🔥 glowing effect */
+  box-shadow: 0 0 15px rgba(255, 152, 0, 0.6);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -88,7 +88,7 @@ nav a:hover {
 
 /* Card Sections */
 .card {
-  background: #111;
+  background: #1c1c1c;   /* 🔥 Dark grey background for cards */
   margin: 30px 10%;
   padding: 25px;
   border-radius: 12px;
@@ -137,4 +137,3 @@ footer {
 .whatsapp-btn:hover {
   background: #1ebd5a;
 }
-

@@ -1,88 +1,89 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #e8eaf6;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
   color: #333;
   line-height: 1.6;
 }
 
+/* Header */
 header {
-  background: linear-gradient(135deg, #673ab7, #512da8);
-  color: white;
-  text-align: center;
-  padding: 80px 20px;
-}
-
-header h1 {
-  font-size: 3rem;
-  margin-bottom: 8px;
-}
-
-header p { font-size: 1.3rem; opacity: 0.85; }
-
-nav {
-  background: #512da8;
-  position: sticky;
-  top: 0;
-  padding: 15px;
-  text-align: center;
-  z-index: 10;
-}
-
-nav a {
-  color: white;
-  margin: 0 18px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.05rem;
-}
-nav a:hover { color: #ffeb3b; }
-
-main {
-  max-width: 900px;
-  margin: auto;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
   padding: 40px 20px;
+  text-align: center;
 }
-
-.card {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  margin-bottom: 30px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+header p {
+  font-size: 1.2rem;
+  opacity: 0.95;
 }
-.card h2 {
-  color: #512da8;
-  margin-bottom: 15px;
-  border-left: 5px solid #673ab7;
-  padding-left: 10px;
+nav {
+  margin-top: 15px;
 }
-
-ul { list-style: none; }
-ul li { padding: 6px 0; font-size: 1.05rem; }
-
-a {
-  color: #512da8;
+nav a {
+  color: #fff;
   text-decoration: none;
+  margin: 0 15px;
   font-weight: bold;
 }
-a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
-footer {
-  background: #673ab7;
-  color: white;
-  text-align: center;
+/* Main sections */
+main {
+  padding: 40px 20px;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
   padding: 25px;
+  margin: 20px auto;
+  max-width: 850px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Projects grid */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.project-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #fff;
   margin-top: 40px;
-  font-size: 0.95rem;
 }
 
 

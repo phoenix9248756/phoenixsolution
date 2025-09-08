@@ -1,15 +1,25 @@
 document.addEventListener("DOMContentLoaded", function() {
-  console.log("Phoenix Solution site loaded ✅");
+    const typingText = ["Web Developer", "Solar Installer", "Tech Enthusiast"];
+    let count = 0;
+    let index = 0;
+    let currentText = "";
+    let letter = "";
 
-  // Typing effect
-  const text = "Web Developer | Solar Installer | Tech Enthusiast";
-  let i = 0;
-  function typing() {
-    if (i < text.length) {
-      document.getElementById("typing").textContent += text.charAt(i);
-      i++;
-      setTimeout(typing, 80);
+    function type() {
+        if (count === typingText.length) {
+            count = 0;
+        }
+        currentText = typingText[count];
+        letter = currentText.slice(0, ++index);
+
+        document.getElementById("typing").textContent = letter;
+        if (letter.length === currentText.length) {
+            count++;
+            index = 0;
+            setTimeout(type, 1500);
+        } else {
+            setTimeout(type, 120);
+        }
     }
-  }
-  typing();
+    type();
 });

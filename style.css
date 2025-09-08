@@ -1,13 +1,5 @@
 /* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #000; /* Black background */
-  color: #fff;
-  line-height: 1.6;
-}
-
+body { background: radial-gradient(circle at top left, rgba(255,152,0,0.15), transparent 40%), radial-gradient(circle at bottom right, rgba(0,188,212,0.15), transparent 40%), #000000; color: #fff; font-family: Arial, sans-serif; margin: 0; padding: 0; }
 /* Header Section */
 header {
   display: flex;

@@ -24,6 +24,7 @@ header {
   box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 
+/* Logo */
 header .logo {
   font-size: 1.6rem;
   font-weight: bold;
@@ -31,18 +32,44 @@ header .logo {
   letter-spacing: 1px;
 }
 
+/* Menu Links */
 header nav a {
   color: #fff;
   text-decoration: none;
   margin-left: 20px;
   font-weight: 600;
+  position: relative;
+  padding-bottom: 5px;
   transition: color 0.3s, transform 0.3s;
 }
 
+/* Orange underline */
+header nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background: #ff9800;
+  border-radius: 2px;
+  transition: width 0.3s ease-in-out, background 0.3s;
+}
+
+/* Hover effect for menu links */
+header nav a:hover::after {
+  width: 100%;
+  background: linear-gradient(90deg, #ff9800, #ffb74d);
+}
+
 header nav a:hover {
-  color: #ff9800;
-  transform: scale(1.1);
-  text-shadow: 0 0 5px #ff9800;
+  color: #ffb74d;
+  transform: scale(1.05);
+}
+
+/* Active menu link */
+header nav a.active::after {
+  width: 100%;
 }
 
 /* =================== Hero Section =================== */
@@ -208,7 +235,7 @@ footer a:hover {
   transform: translateY(-6px) scale(1.03);
 }
 
-/* Parent card hover effect (optional) */
+/* Parent card hover effect */
 .slogan-card:hover {
   transform: translateY(-6px) scale(1.03);
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.6),
@@ -254,5 +281,9 @@ footer a:hover {
   }
   .card {
     margin: 15px;
+  }
+  header nav a {
+    margin-left: 15px;
+    font-size: 0.9rem;
   }
 }

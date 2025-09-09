@@ -674,6 +674,33 @@
                 padding: 25px;
             }
         }
+      /* Slogan Cards */
+.slogans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 50px auto;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+.slogan-card {
+  background: #0d1b2a;
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid #00bcd4;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+.slogan-card:hover {
+  background: #e91e63;
+  border-color: #ff9800;
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 152, 0, 0.8);
+}
+
     </style>
 </head>
 <body>

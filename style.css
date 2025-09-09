@@ -134,7 +134,7 @@ footer a {
   }
 }
 .slogan-card {
-  background: linear-gradient(135deg, #ff9800, #ff5722); /* Orange gradient default */
+  background: linear-gradient(135deg, #ff9800, #ff5722); /* default orange */
   padding: 20px;
   border-radius: 12px;
   color: #fff;
@@ -156,7 +156,7 @@ footer a {
 /* Hover effect for all cards */
 .slogan-card:hover {
   transform: translateY(-6px) scale(1.05);
-  background: linear-gradient(135deg, #ff9800, #ff5722); /* Orange gradient on hover */
+  background: linear-gradient(135deg, #ff9800, #ff5722); /* hover orange */
   border-color: #FFD700;
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 
               0 0 40px rgba(255, 152, 0, 0.5);

@@ -22,7 +22,6 @@ header {
   border-bottom: 2px solid #ff9800;
   z-index: 1000;
   box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-  transition: background 0.3s;
 }
 
 header .logo {
@@ -179,13 +178,44 @@ footer a:hover {
   overflow: hidden;
 }
 
-/* Multiple colors for cards */
+/* Parent card colors */
 .first-card { background: pink; border-color: #ff69b4; }
 .second-card { background: #8e24aa; border-color: #ba68c8; }
 .third-card { background: #009688; border-color: #26a69a; }
 .fourth-card { background: #ff5722; border-color: #ff7043; }
 
-/* Gradient animation overlay */
+/* Child card default style */
+.child-card {
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  border: 2px solid #FFD700;
+  border-radius: 12px;
+  padding: 15px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+/* Child card hover effect - Pink */
+.child-card:hover {
+  background: pink !important;
+  border-color: #ff69b4 !important;
+  box-shadow: 0 0 20px rgba(255,105,180,0.8),
+              0 0 40px rgba(255,182,193,0.5);
+  transform: translateY(-6px) scale(1.03);
+}
+
+/* Parent card hover effect (optional) */
+.slogan-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6),
+              0 0 40px rgba(255, 152, 0, 0.4);
+}
+
+/* Gradient overlay for parent card */
 .slogan-card::before {
   content: '';
   position: absolute;
@@ -201,15 +231,6 @@ footer a:hover {
 .slogan-card:hover::before {
   top: -25%;
   left: -25%;
-}
-
-/* Hover effect for all slogan cards */
-.slogan-card:hover {
-  transform: translateY(-8px) scale(1.05);
-  background: linear-gradient(135deg, #ff9800, #ff5722);
-  border-color: #FFD700;
-  box-shadow: 0 0 28px rgba(255, 215, 0, 0.8),
-              0 0 48px rgba(255, 152, 0, 0.5);
 }
 
 /* =================== Animations =================== */

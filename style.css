@@ -133,13 +133,32 @@ footer a {
     margin: 15px;
   }
 }
-.slogan-card:hover {
-  transform: translateY(-6px) scale(1.05);
+.slogan-card {
+  background: linear-gradient(135deg, #ff9800, #ff5722); /* Orange gradient default */
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
 
-  box-shadow: 0 0 20px rgba(255, 105, 180, 0.8), 
-              0 0 40px rgba(255, 182, 193, 0.5);
+  border: 2px solid #FFD700;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: all 0.4s ease;
+}
 
-  /* Pink gradient */
-  background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+/* Pehla card default pink */
+.slogan-card.first-card {
+  background: pink;
   border-color: #ff69b4;
 }
+
+/* Hover effect for all cards */
+.slogan-card:hover {
+  transform: translateY(-6px) scale(1.05);
+  background: linear-gradient(135deg, #ff9800, #ff5722); /* Orange gradient on hover */
+  border-color: #FFD700;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 
+              0 0 40px rgba(255, 152, 0, 0.5);
+}
+

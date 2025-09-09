@@ -133,6 +133,15 @@ footer a {
     margin: 15px;
   }
 }
+.slogans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 40px auto;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
 .slogan-card {
   background: linear-gradient(135deg, #ff9800, #ff5722); /* default orange */
   padding: 20px;
@@ -141,7 +150,6 @@ footer a {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-
   border: 2px solid #FFD700;
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
   transition: all 0.4s ease;
@@ -153,19 +161,13 @@ footer a {
   border-color: #ff69b4;
 }
 
-/* Hover effect: sab cards hover pe orange */
+/* Hover effect for all cards */
 .slogan-card:hover {
   transform: translateY(-6px) scale(1.05);
-  background: linear-gradient(135deg, #ff9800, #ff5722);
+  background: linear-gradient(135deg, #ff9800, #ff5722); /* hover orange */
   border-color: #FFD700;
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.8),
               0 0 40px rgba(255, 152, 0, 0.5);
-}
-
-/* Pehla card hover na ho to fir se pink */
-.slogans:hover .first-card:not(:hover) {
-  background: pink;
-  border-color: #ff69b4;
 }
 
 

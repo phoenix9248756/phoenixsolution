@@ -153,12 +153,19 @@ footer a {
   border-color: #ff69b4;
 }
 
-/* Hover effect for all cards */
+/* Hover effect: sab cards hover pe orange */
 .slogan-card:hover {
   transform: translateY(-6px) scale(1.05);
-  background: linear-gradient(135deg, #ff9800, #ff5722); /* hover orange */
+  background: linear-gradient(135deg, #ff9800, #ff5722);
   border-color: #FFD700;
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.8),
               0 0 40px rgba(255, 152, 0, 0.5);
 }
+
+/* Pehla card hover na ho to fir se pink */
+.slogans:hover .first-card:not(:hover) {
+  background: pink;
+  border-color: #ff69b4;
+}
+
 
